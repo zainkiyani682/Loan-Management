@@ -18,9 +18,12 @@ SECRET_KEY = '0k7(=3xy503l5nio^)k29b1ryxyfm)r%k)))4xqq3li4)og%9c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['loanmanagement-nahid.herokuapp.com']
+ALLOWED_HOSTS = ['loan-management-system-t558.onrender.com',]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://loan-management-system-t558.onrender.com',
+    # add other domains if needed
+]
 # Application definition
 
 INSTALLED_APPS = [
